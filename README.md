@@ -16,15 +16,6 @@
 * [Materialize CSS - Cor](http://materializecss.com/color.html)
 
 
-    //"angular": "^1.6.4",
-    //"angular-route": "^1.6.4",
-    //"angular-animate": "^1.5.2",
-    //"angular-aria": "^1.5.2",
-    //"angular-material": "^1.1.4",
-    //"angular-material-data-table": "^0.10.10",
-    //"angular-messages": "^1.5.2",
-    //"materialize-css": "^0.98.2"
-
 ### Node / Npm
 
 * [Npm](https://www.npmjs.com/)
