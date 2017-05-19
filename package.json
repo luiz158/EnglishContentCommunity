@@ -2,7 +2,10 @@
   "name": "EnglishContentCommunity",
   "version": "1.0",
   "license": "MIT",
-  "angular-cli": {},  
+  "engines": {
+    "node": "6.9.5",
+    "npm": "3.10.10"
+  },
   "scripts": {
     "start": "http-server",
     "preinstall": "npm install -g http-server"
