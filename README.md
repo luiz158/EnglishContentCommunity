@@ -14,6 +14,7 @@
 * [Materialize CSS - Icons](http://materializecss.com/icons.html)
 * [Materialize CSS - Buttons](http://materializecss.com/buttons.html)
 * [Materialize CSS - Cor](http://materializecss.com/color.html)
+* [Como utilizar os ícones do Google Material Design](https://ajuda.fastcommerce.com.br/como-utilizar-os-icones-do-google-material-design)
 
 
 ### Node / Npm
