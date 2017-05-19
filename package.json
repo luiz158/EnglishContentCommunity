@@ -1,7 +1,7 @@
 {
   "name": "englishcontentcommunity",
-  "version": "1.0.0",
   "description": "EnglishContentCommunity",
+  "version": "1.0.0",
   "license": "MIT",
   "engines": {
     "node": "6.9.5",
@@ -9,6 +9,10 @@
   },
   "scripts": {
     "preinstall": "npm install -g http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabianogoes/EnglishContentCommunity.git"
   },
   "dependencies": {
     "angular": "^1.6.4",
