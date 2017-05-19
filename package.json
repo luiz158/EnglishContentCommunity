@@ -7,7 +7,6 @@
     "npm": "3.10.10"
   },
   "scripts": {
-    "start": "http-server",
     "preinstall": "npm install -g http-server"
   },
   "dependencies": {
