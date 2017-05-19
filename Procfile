@@ -1,1 +1,1 @@
-web: http-server --port $PORT
+web npm install
