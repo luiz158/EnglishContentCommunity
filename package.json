@@ -4,8 +4,8 @@
   "license": "MIT",
   "angular-cli": {},  
   "scripts": {
-    "start":        "http-server",
-    "preinstall":   "npm install -g http-server"
+    "start": "http-server",
+    "preinstall": "npm install -g http-server"
   },
   "dependencies": {
     "harp": "*",

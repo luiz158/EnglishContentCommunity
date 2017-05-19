@@ -1,1 +1,1 @@
-web: http-server -p $PORT
+web: harp server --port $PORT
