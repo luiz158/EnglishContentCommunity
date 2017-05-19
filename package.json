@@ -8,8 +8,7 @@
     "npm": "3.10.10"
   },
   "scripts": {
-    "preinstall": "npm install -g http-server",
-    "start": "http-server"
+    "preinstall": "npm install -g http-server"
   },
   "dependencies": {
     "angular": "^1.6.4",
