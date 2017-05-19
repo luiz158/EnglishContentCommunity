@@ -1,6 +1,12 @@
 {
-  "name": "English-Content-Community",
+  "name": "EnglishContentCommunity",
   "version": "1.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "start":        "http-server",
+    "preinstall":   "npm install -g http-server"
+  },
   "dependencies": {
     "harp": "*",
     "angular": "^1.6.4",
