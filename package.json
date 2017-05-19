@@ -8,10 +8,10 @@
     "npm": "3.10.10"
   },
   "scripts": {
-    "preinstall": "npm install http-server"
+    "preinstall": "npm install -g http-server",
+    "start": "http-server"
   },
   "dependencies": {
-    "harp": "*",
     "angular": "^1.6.4",
     "angular-route": "^1.6.4",
     "materialize-css": "^0.98.2"
