@@ -2,6 +2,7 @@
   "name": "englishcontentcommunity",
   "description": "EnglishContentCommunity",
   "version": "1.0.0",
+  "author": "Fabiano Goes",
   "license": "MIT",
   "engines": {
     "node": "6.9.5",
