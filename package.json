@@ -1,6 +1,7 @@
 {
-  "name": "EnglishContentCommunity",
-  "version": "1.0",
+  "name": "englishcontentcommunity",
+  "version": "1.0.0",
+  "description": "EnglishContentCommunity",
   "license": "MIT",
   "engines": {
     "node": "6.9.5",
