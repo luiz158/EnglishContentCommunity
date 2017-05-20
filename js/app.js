@@ -3,10 +3,32 @@
 var app = angular.module('mainApp', ['ngRoute']);
 app.config(['$routeProvider', function($routeProvider){
         $routeProvider
-            .when('/', {templateUrl: 'home.html'})
-            .when('/login', {templateUrl: 'login.html'})
-            .when('/user/register', {templateUrl: 'user-register-form.html'})
-            .when('/user/list', {templateUrl: 'user-register-table.html'})
+            .when('/', {
+              templateUrl: 'home.html',
+              controller: 'IndexController'
+            })
+            .when('/login', {
+              templateUrl: 'login.html',
+              controller: 'LoginController'
+            })
+            .when('/user/register', {templateUrl: 'user-register.html'})
+            .when('/user/list', {templateUrl: 'user-list.html'})
+            .when('/phrase/register', {
+              templateUrl: 'content-register.html',
+              controller: 'PhraseController'
+            })
+            .when('/phrase/list', {
+              templateUrl: 'content-list.html',
+              controller: 'PhraseController'
+            })
+            .when('/word/register', {
+              templateUrl: 'content-register.html',
+              controller: 'WordController'
+            })
+            .when('/word/list', {
+              templateUrl: 'content-list.html',
+              controller: 'WordController'
+            })
             .when('/settings', {templateUrl: 'settings.html'})
             .otherwise({redirectTo: '/'});
     }
