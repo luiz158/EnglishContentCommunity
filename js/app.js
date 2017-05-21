@@ -15,7 +15,7 @@ app.config(['$routeProvider', function($routeProvider){
             .when('/user/list', {templateUrl: 'user-list.html'})
             .when('/phrase/register', {
               templateUrl: 'content-register.html',
-              controller: 'PhraseController'
+              controller: 'PhraseController as ctrlContent'
             })
             .when('/phrase/list', {
               templateUrl: 'content-list.html',
@@ -23,7 +23,7 @@ app.config(['$routeProvider', function($routeProvider){
             })
             .when('/word/register', {
               templateUrl: 'content-register.html',
-              controller: 'WordController'
+              controller: 'WordController as ctrlContent'
             })
             .when('/word/list', {
               templateUrl: 'content-list.html',

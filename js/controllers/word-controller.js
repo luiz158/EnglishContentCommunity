@@ -1,11 +1,13 @@
 app.controller('WordController', ['$rootScope', function($rootScope){
     $rootScope.session = 'active';
+    console.log("Word Session = "+$rootScope.session);
 
     var self = this;
-
+    self.contentType = "word";
     self.title = "Word";
-    $rootScope.title = self.title;
-    console.log("Word Title = "+self.title);    
 
-    console.log("Word Session = "+$rootScope.session);
+    self.submitContent = function(content){
+        console.log(content);
+    }
+
 }]);

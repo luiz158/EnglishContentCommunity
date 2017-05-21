@@ -1,28 +1,40 @@
 <div class="card">
     <div class="card-content">
-        <span class="card-title deep-purple-text center" ng-bind="title"></span>
+        <span class="card-title deep-purple-text center" ng-bind="ctrlContent.title"></span>
         <div class="row">
-            <form class="col s12" method="get" action="/#/phrase/list">
+            <form class="col s12" method="post">
                 <div class="row">
                     <div class="input-field col s12">
-                        <input placeholder="Phrase Ask..." id="phrase_ask" type="text" class="validate">
-                        <label for="phrase_ask">Phrase Ask</label>
+                        <input placeholder="Phrase Ask..." type="text" class="validate" data-ng-model="ctrlContent.content.ask"/>
+                        <label>Phrase Ask</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input placeholder="Phrase Answer..." id="phrase_answer" type="text" class="validate">
-                        <label for="phrase_answer">Phrase Answer</label>
+                        <input placeholder="Phrase Answer..." type="text" class="validate" data-ng-model="ctrlContent.content.answer"/>
+                        <label>Phrase Answer</label>                        
+                        <p data-ng-show="ctrlContent.contentType == 'word'">
+                            <input name="verb" class="with-gap" type="radio" id="regularVerb" value="REGULAR" data-ng-model="ctrlContent.content.verb" />
+                            <label for="regularVerb">Regular Verb</label>
+                            <input name="verb" class="with-gap" type="radio" id="irregularVerb" value="IRREGULAR" data-ng-model="ctrlContent.content.verb" />
+                            <label for="irregularVerb">Irregular Verb</label>                         
+                            <input name="verb" class="with-gap" type="radio" id="noneVerb" value="NONE" data-ng-model="ctrlContent.content.verb" />
+                            <label for="noneVerb">None</label>                         
+                        </p>                        
                     </div>
                 </div>
-                <button type="submit" class="waves-effect waves-light btn left">
-                    <i class="material-icons left">done</i>
-                    Save
-                </button>
-                <a href="/#/" class="waves-effect grey btn right">
-                    <i class="material-icons left">cancel</i>
-                    Cancel
-                </a>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button type="submit" class="waves-effect waves-light btn left" data-ng-click="ctrlContent.submitContent(ctrlContent.content)">
+                            <i class="material-icons left">done</i>
+                            Save
+                        </button>
+                        <a href="/#/" class="waves-effect grey btn right">
+                            <i class="material-icons left">cancel</i>
+                            Cancel
+                        </a>
+                    </div>
+                </div>
             </form>
         </div><!-- /row -->
     </div><!-- /card-content -->
