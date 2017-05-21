@@ -1,12 +1,13 @@
 <div class="card">
+    <span class="card-title grey-text center" ng-bind="ctrlContent.title"></span>
     <div class="card-content">
         <table class="bordered striped highlight responsive-table">
             <thead>
-            <tr>
+            <tr style="line-height: 14px;">
                 <th>Phrase Ask</th>
                 <th>Phrase Answer</th>
                 <th class="center">
-                    <a href="/#/phrase/register" class="waves-effect cyan btn">
+                    <a ng-href="/#{{ctrlContent.hrefAddContent}}" class="waves-effect cyan btn-floating">
                         <i class="material-icons">add</i>
                     </a>                              
                 </th>
@@ -18,10 +19,10 @@
                 <td>AAAAAAA</td>
                 <td>BBBBBBBBB</td>
                 <td class="center">
-                    <a class="waves-effect teal btn">
+                    <a class="waves-effect">
                         <i class="material-icons">mode_edit</i>
                     </a>  
-                    <a class="waves-effect red btn">
+                    <a class="waves-effect">
                         <i class="material-icons">delete</i>
                     </a>                                                                  
                 </td>
@@ -30,10 +31,10 @@
                 <td>CCCCCCC</td>
                 <td>DDDDDDDDD</td>
                 <td class="center">
-                    <a class="waves-effect teal btn">
+                    <a class="waves-effect">
                         <i class="material-icons">mode_edit</i>
                     </a>  
-                    <a class="waves-effect red btn">
+                    <a class="waves-effect">
                         <i class="material-icons">delete</i>
                     </a>                                                                  
                 </td>
@@ -42,10 +43,10 @@
                 <td>FFFFFFF</td>
                 <td>GGGGGGGG</td>
                 <td class="center">
-                    <a class="waves-effect teal btn">
+                    <a class="waves-effect">
                         <i class="material-icons">mode_edit</i>
                     </a>  
-                    <a class="waves-effect red btn">
+                    <a class="waves-effect">
                         <i class="material-icons">delete</i>
                     </a>                                                                  
                 </td>

@@ -13,21 +13,25 @@ app.config(['$routeProvider', function($routeProvider){
             })
             .when('/user/register', {templateUrl: 'user-register.html'})
             .when('/user/list', {templateUrl: 'user-list.html'})
-            .when('/phrase/register', {
+            .when('/content/topics', {
+              templateUrl: 'content-topics.html',
+              controller: 'ContentTopicsController as ctrlTopics'
+            })
+            .when('/content/topics/phrase/register', {
               templateUrl: 'content-register.html',
-              controller: 'PhraseController as ctrlContent'
+              controller: 'ContentPhraseController as ctrlContent'
             })
-            .when('/phrase/list', {
+            .when('/content/topics/phrase/list', {
               templateUrl: 'content-list.html',
-              controller: 'PhraseController'
+              controller: 'ContentPhraseController as ctrlContent'
             })
-            .when('/word/register', {
+            .when('/content/topics/word/register', {
               templateUrl: 'content-register.html',
-              controller: 'WordController as ctrlContent'
+              controller: 'ContentWordController as ctrlContent'
             })
-            .when('/word/list', {
+            .when('/content/topics/word/list', {
               templateUrl: 'content-list.html',
-              controller: 'WordController'
+              controller: 'ContentWordController as ctrlContent'
             })
             .when('/settings', {templateUrl: 'settings.html'})
             .otherwise({redirectTo: '/'});
