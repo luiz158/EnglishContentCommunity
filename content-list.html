@@ -1,57 +1,21 @@
 <div class="card">
     <span class="card-title grey-text center" ng-bind="ctrlContent.title"></span>
     <div class="card-content">
-        <table class="bordered striped highlight responsive-table">
-            <thead>
-            <tr style="line-height: 14px;">
-                <th>Phrase Ask</th>
-                <th>Phrase Answer</th>
-                <th class="center">
-                    <a ng-href="/#{{ctrlContent.hrefAddContent}}" class="waves-effect cyan btn-floating">
-                        <i class="material-icons">add</i>
-                    </a>                              
-                </th>
-            </tr>
-            </thead>
+        
+        <ul class="collection with-header">
+            <li class="collection-item avatar" data-ng-repeat="content in ctrlContent.contents">
+                <a data-ng-href="/#/content/topics/phrase/register">
+                    <img data-ng-src="images/{{ctrlContent.defaltImage}}" alt="Content" class="circle">
+                    <span class="title teal-text">{{content.ask}}</span>
+                    <p>
+                        <span class="grey-text"><i class="tiny material-icons">trending_flat</i>{{content.answer}}</span>
+                    </p>
+                    <span class="secondary-content">
+                        <span class="new badge grey lighten-1" data-badge-caption="{{content.description}}"></span>
+                    </span>
+                </a>
+            </li>
+        </ul>      
 
-            <tbody>
-            <tr>
-                <td>AAAAAAA</td>
-                <td>BBBBBBBBB</td>
-                <td class="center">
-                    <a class="waves-effect">
-                        <i class="material-icons">mode_edit</i>
-                    </a>  
-                    <a class="waves-effect">
-                        <i class="material-icons">delete</i>
-                    </a>                                                                  
-                </td>
-            </tr>
-            <tr>
-                <td>CCCCCCC</td>
-                <td>DDDDDDDDD</td>
-                <td class="center">
-                    <a class="waves-effect">
-                        <i class="material-icons">mode_edit</i>
-                    </a>  
-                    <a class="waves-effect">
-                        <i class="material-icons">delete</i>
-                    </a>                                                                  
-                </td>
-            </tr>
-            <tr>
-                <td>FFFFFFF</td>
-                <td>GGGGGGGG</td>
-                <td class="center">
-                    <a class="waves-effect">
-                        <i class="material-icons">mode_edit</i>
-                    </a>  
-                    <a class="waves-effect">
-                        <i class="material-icons">delete</i>
-                    </a>                                                                  
-                </td>
-            </tr>
-            </tbody>
-        </table> 
     </div><!-- /card-content -->   
 </div><!-- /card -->
